@@ -1,14 +1,7 @@
 .advantages {
     min-height: 470px;
     padding: 72px 0 60px 0;
-    background: #F6F6F6;
-    &__header {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;        
-        text-align: center;
-        color: #0D0D0D;
-    }
+    background: #F6F6F6;    
     &__items {
         margin-top: 60px;
         width: 960px;
@@ -17,5 +10,29 @@
     }
     &__item {
         width: 280px;
+        img {
+            display: block;   
+            margin: 0 auto;
+        }
+    }
+    &__descr {
+        margin-top: 40px;
+    }
+    &__title {        
+        font-weight: 700;
+        font-size: 18px;        
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__text {
+        margin-top: 22px;
+        font-weight: 300;
+        font-size: 14px;        
+        text-align: center;
+        color: #0D0D0D;
+        span {                       
+            text-decoration-line: underline;
+            color: #FF0000;
+        }
     }
 }
