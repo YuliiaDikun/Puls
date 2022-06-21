@@ -1,13 +1,21 @@
-@import 'base/variables';
+@import "base/variables";
+@import "base/mixin";
+
 * {
-	font-family: 'Museo Sans Cyrl', sans-serif;
+    
+    font-family: "Museo Sans";
 }
+ 
 .container {
-	max-width: 950px;
-	margin: 0 auto;
+    max-width: 950px;
+    margin: 0 auto;
 }
-@import 'blocks/promo';
-@import 'blocks/header';
-@import 'blocks/buttons';
-@import 'blocks/advantages';
-@import 'blocks/title';
+ 
+ 
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/title";
+@import "blocks/consultation";
+@import "blocks/forms";
