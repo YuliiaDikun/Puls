@@ -1,0 +1,98 @@
+@media (max-width: 1200px){
+    .promo {
+        padding: 20px 0 90px 0;
+    }
+    .consultation {
+        padding: 80px 0 72px 0;    
+    }
+    .catalog {
+        padding-bottom: 60px;
+        &__tabs {
+            margin-top: 55px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .header {
+        padding: 0 20px; 
+    }
+    .promo {
+        &__wrapper {
+            padding-right: 20px;
+            margin-top: 60px;
+        }
+    }
+    .advantages {
+        padding: 72px 20px 60px 20px;
+        &__items {
+            flex-wrap: wrap;
+            width: 920px;
+            justify-content: space-around;
+        }
+        &__item {
+            min-width: 280px;
+        }
+    }
+    .consultation {
+        padding: 70px 0 62px 0;  
+        .title_left {
+            margin-left: 30px;
+        }
+        &__descr {
+            margin-left: 30px;
+        }    
+        .feed-form {
+            margin-left: 30px;
+        }  
+    }  
+    .carousel {
+        padding: 60px 0;
+        &__inner {
+            width: 80%;
+            img {
+                width: 100%;
+            }
+        } 
+        .slick-dots {   
+            margin-top: 15px;         
+            font-size: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .slick-active {
+                margin-right: 5px;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                box-shadow: 1px 1px 13px $main-color;               
+            }
+            li 
+                button
+                    {
+                        width:10px;
+                        height: 10px;
+                        margin-right: 5px;
+                        border: none;
+                        border-radius: 100%;
+                        color: #6B6B6B;
+                    }
+        }
+    }
+    .catalog {
+        padding-bottom: 40px;
+        &__tabs {
+            margin-top: 45px;
+        }
+        &__content {
+            margin: 50px 20px 0 20px;
+        }
+        &-item {
+            width: 290px;
+        }
+    }   
+    .reviews {
+        &__items {
+            margin: 50px 20px 0px 20px;
+        }
+    }   
+}

@@ -1,7 +1,5 @@
 .reviews {
-    min-height: 942px;
-    padding: 0;
-
+    min-height: 942px;  
     &__items {
         margin-top: 50px;
         display: flex;
@@ -10,7 +8,7 @@
     &__item {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 50px;        
+        margin-bottom: 60px;        
         img {
             width: 169px;
             height: 169px;            
