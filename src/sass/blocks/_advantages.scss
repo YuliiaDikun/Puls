@@ -4,12 +4,14 @@
     background: #F6F6F6;    
     &__items {
         margin-top: 60px;
-        width: 960px;
+        /* width: 960px; */
+        flex: 0 0 960px;
         display: flex;
         justify-content: space-between;    
     }
     &__item {
-        width: 280px;
+        /* width: 280px */
+        flex: 0 0 280px;
         img {
             display: block;   
             margin: 0 auto;
