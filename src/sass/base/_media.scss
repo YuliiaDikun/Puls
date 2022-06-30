@@ -377,15 +377,18 @@
     }
     .modal {
         width: 285px;
-        padding: 38px 30px 40px 25px; 
+        padding: 25px 30px 40px 25px;
         &__close {
             right: -29px;
             font-size: 44px;
             line-height: 21px;
-        }     
+        }  
+        label.error {
+            margin-bottom: 6px;
+        }   
     }
     .feed-form_mt25 {
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .feed-form {
         width: 240px;
