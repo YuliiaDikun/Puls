@@ -26,7 +26,7 @@
         padding: 72px 20px 60px 20px;
         &__items {
             flex-wrap: wrap;
-            min-width: 820px;
+            flex: 0 0 700px;
             justify-content: space-around;
         }
         &__item {
@@ -141,7 +141,7 @@
             font-size: 25px;
         }
         &__items {
-            min-width: 700px;
+            flex: 0 0 600px;
         }
         &__item {
             flex: 0 0 280px;           
@@ -174,12 +174,14 @@
         }
         &__tabs {
             margin-top: 40px;
+            flex-direction: column;
         }
         &__tab {
             width: 200px;
             height: 43px;
             font-size: 15px;
             line-height: 43px;
+            margin-bottom: 15px;
         }
         &__content {
             margin: 40px 25px 0 25px;
@@ -237,6 +239,9 @@
         .header {
             &__logo {
                 width: 180px;
+                img{
+                    width: 95%;
+                }
             }
             &__official {
                 display: none;
@@ -363,11 +368,30 @@
             line-height: 16px;
         }
         &__social-item {
-            width: 29px;
-            height: 29px;
+            width: 30px;
+            height: 30px;
             img {
-                height: 14px;
+                height: 13px;
             }
+        }
+    }
+    .modal {
+        width: 285px;
+        padding: 38px 30px 40px 25px; 
+        &__close {
+            right: -29px;
+            font-size: 44px;
+            line-height: 21px;
+        }     
+    }
+    .feed-form_mt25 {
+        margin-top: 20px;
+    }
+    .feed-form {
+        width: 240px;
+        input {
+            height: 45px;
+            font-size: 13px;
         }
     }
 }
