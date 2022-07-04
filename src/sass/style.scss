@@ -1,5 +1,6 @@
 @import "base/variables";
 @import "base/mixin";
+@import "base/animations";
 
 * {
     
@@ -24,6 +25,8 @@
 @import "blocks/reviews";
 @import "blocks/footer";
 @import "blocks/modal";
+@import "blocks/pageup";
+
 
 
 @import "base/media";
