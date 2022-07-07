@@ -45,6 +45,13 @@ $(document).ready(function(){
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });    
 
+    $(document).mouseup(function (e) {
+        var container = $('.overlay, #consultation, #thanks, #order');
+        if (container.has(e.target).length === 0){
+            container.hide();
+        }
+    });
+
     $('.button_mini').each(function(i) {
         $(this).on('click', function() {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());

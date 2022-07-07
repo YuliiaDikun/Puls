@@ -388,10 +388,11 @@
         }
     }
     .modal {
-        width: 285px;
-        padding: 25px 30px 40px 25px;
+        width: 355px;
+        padding: 25px 30px 40px 30px;
         &__close {
-            right: -29px;
+            top: 10px;
+            right: 10px;
             font-size: 44px;
             line-height: 21px;
         }  
@@ -400,10 +401,10 @@
         }   
     }
     .feed-form_mt25 {
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .feed-form {
-        width: 240px;
+        width: 300px;
         input {
             height: 45px;
             font-size: 13px;
@@ -422,4 +423,27 @@
             height: 280px;
         }
     }
+    .modal {
+        width: 320px;
+        padding: 25px 30px 40px 30px;
+        &__close {
+            top: 10px;
+            right: 10px;
+            font-size: 40px;
+            line-height: 18px;
+        }  
+        label.error {
+            margin-bottom: 6px;
+        }         
+    }
+    .feed-form_mt25 {
+        margin-top: 15px;
+    }
+    .feed-form {
+        width: 265px;
+        input {
+            height: 40px;
+            font-size: 13px;
+        }
+    }      
 }

@@ -7,6 +7,7 @@ $(document).ready(function(){
         responsive: [
             {
                 breakpoint: 992,
+                adaptiveHeight: false,
                 settings: {
                   dots: true,
                   arrows: false
@@ -44,6 +45,13 @@ $(document).ready(function(){
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });    
 
+    $(document).mouseup(function (e) { // закриття модального вікна кліком на задній фон
+        let container = $('.overlay, #consultation, #thanks, #order');
+        if (container.has(e.target).length === 0){
+            container.hide();
+        }
+    });
+
     $('.button_mini').each(function(i) {
         $(this).on('click', function() {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
@@ -76,7 +84,7 @@ $(document).ready(function(){
     validateForms('#consultation form');
     validateForms('#order form');
 
-    $('input[name=phone]').mask("+7 (999) 999-99-99");
+    $('input[name=phone]').mask("+8 (999) 999-99-99");
 
     $('form').submit(function(e) {
         e.preventDefault();
