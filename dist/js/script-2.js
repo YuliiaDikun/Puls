@@ -45,8 +45,8 @@ $(document).ready(function(){
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });    
 
-    $(document).mouseup(function (e) { // закриття модального вікна кліком на задній фон
-        let container = $('.overlay, #consultation, #thanks, #order');
+    $(document).mouseup(function (e) {
+        var container = $('.overlay, #consultation, #thanks, #order');
         if (container.has(e.target).length === 0){
             container.hide();
         }
